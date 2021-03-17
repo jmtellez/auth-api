@@ -19,12 +19,14 @@ const partialsPath = path.join(__dirname, '../templates/partials');
 app.set('view engine', 'hbs');
 app.set('views', templatePath);
 hbs.registerPartials(partialsPath);
+console.log(publicDirectoryPath);
 app.use(express.static(publicDirectoryPath));
+
 app.use(session({
     secret: process.env.SECRET,
-    resave: false,
+    resave: true,
     saveUninitialized: true
-}))
+}));
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 
