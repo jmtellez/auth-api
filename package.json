@@ -1,0 +1,32 @@
+{
+  "name": "auth-api",
+  "version": "1.0.0",
+  "description": "Authentication API using Express and Passport.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmtellez/auth-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmtellez/auth-api/issues"
+  },
+  "homepage": "https://github.com/jmtellez/auth-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "tailwindcss": "^2.0.3",
+    "winston": "^3.3.3"
+  }
+}
